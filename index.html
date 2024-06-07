@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatedle!</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="conteiner">
+               
+        <div class="logo-container">
+            <img src="../img/logo.webp" alt="Logo Fate">
+        </div>
+
+        <div class="game-container">
+            <h1>Adivina el servant del día</h1>
+            <div class="autocomplete-container">
+                <div class="autocomplete">
+                    <input type="text" id="guess-input" placeholder="Ingrese un servant" />
+                    <div id="autocomplete-list" class="autocomplete-items"></div>
+                </div>
+                <button id="submit-guess"></button>
+            </div>
+            <p id="message"></p>
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>Servant</th>
+                        <th>Género</th>
+                        <th>Clase</th>
+                        <th>NP</th>
+                        <th>Serie</th>
+                        <th>Origen</th>
+                        <th>Región</th>
+                        <th>Alineamiento</th>
+                        <th>Tipo</th>
+                        <th>⭐</th>
+                    </tr>
+                </thead>
+                <tbody id="results"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
