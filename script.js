@@ -7,7 +7,7 @@ let answer = null;
 // Event listener para cuando se carga el DOM
 document.addEventListener('DOMContentLoaded', () => {
     // Fetch para cargar los datos de los personajes
-    fetch('/data/servants.json')
+    fetch('./data/servants.json')
         .then(response => response.json())
         .then(data => {
             characters = data; // Guardamos los personajes
